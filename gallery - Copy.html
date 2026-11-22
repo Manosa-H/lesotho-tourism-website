@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style type="text/css">
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('pic 8.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: whitesmoke;
+            border-radius: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        .lead {
+            font-size: 18px;
+        }
+
+        
+
+        .links {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            margin-right: 40px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .links a:hover {
+            background-color: blue;
+            font-size: 18px;
+        }
+
+        .center {
+            text-align: center;
+            color: wheat;
+        }
+
+        .center h1 {
+            margin: 30px ;
+        }
+
+        
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .gallery div {
+            border: 3px solid black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: whitesmoke;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        
+
+        @media (max-width: 1024px) {
+
+            .gallery {
+                grid-template-columns: 1fr;
+                max-width: 800px;
+                gap: 20px;
+            }
+
+            .gallery img {
+                height: 300px;
+            }
+
+        }
+
+    
+
+        @media (max-width: 768px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .links {
+                justify-content: center;
+                margin-right: 0;
+            }
+
+            .gallery {
+                max-width: 650px;
+                padding: 15px;
+            }
+
+            .gallery img {
+                height: 350px;
+            }
+
+        }
+
+        
+
+        @media (max-width: 480px) {
+
+            header {
+                padding: 30px ;
+            }
+
+            header h1 {
+                font-size: 23px;
+            }
+
+            .lead {
+                font-size: 15px;
+            }
+
+            .links {
+                justify-content: center;
+                gap: 5px;
+                margin-right: 0;
+            }
+
+            .links a {
+                font-size: 13px;
+                padding: 5px;
+            }
+
+            .center h1 {
+                font-size: 22px;
+            }
+
+            .gallery {
+                padding: 10px;
+                gap: 20px;
+            }
+
+            .gallery img {
+                height: 230px;
+            }
+
+            footer {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <h1><i>GALLERY</i></h1>
+
+            <p class="lead">
+                Discover the breathtaking beauty of Lesotho
+            </p>
+        </div>
+
+        <nav class="links">
+            <a href="index1.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="center">
+            <h1><i>TOURIST ATTRACTION GALLERY</i></h1>
+        </div>
+
+        <div class="gallery">
+
+            <div class="pic1">
+                <img src="pic1.jpg" alt="Tourist attraction in Lesotho">
+            </div>
+
+            <div class="pic2">
+                <img src="pic 3.jpg" alt="Beautiful scenery in Lesotho">
+            </div>
+
+            <div class="pic4">
+                <img src="pic 4.jpg" alt="Lesotho tourist attraction">
+            </div>
+
+            <div class="pic5">
+                <img src="pic 5.jpg" alt="Mountain scenery">
+            </div>
+
+            <div class="pic6">
+                <img src="pic 6.jpg" alt="Tourist destination">
+            </div>
+
+            <div class="pic7">
+                <img src="pic 7.jpg" alt="Beautiful landscape">
+            </div>
+
+            <div class="pic8">
+                <img src="pic 8.jpg" alt="Scenery in Lesotho">
+            </div>
+
+            <div class="pic9">
+                <img src="pic 9.jpg" alt="Tourist attraction">
+            </div>
+
+            <div class="pic10">
+                <img src="pic 10.jpg" alt="Lesotho landscape">
+            </div>
+
+            <div class="lesotho">
+                <img src="lesotho.jpg" alt="Beautiful Lesotho scenery">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2026 Tourism Lesotho
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - Lancers Inn</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>CONTACT US</h1>
+            <p class="lead">
+                SEND US A MESSAGE AND WE WILL GET BACK TO YOU
+            </p>
+        </div>
+
+        
+        <nav class="links">
+            <a href="index1.html">HOME</a> |
+            <a href="about.html">ABOUT</a> |
+            <a href="services.html">SERVICES</a> |
+            <a href="gallery.html">GALLERY</a> |
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    
+    <div class="CONTACT">
+        <div class="papi">
+        <h4>Get in Touch</h4>
+
+       <h3>LANCERS INN CONTACTS</h3>
+
+        <li>CALL: +266 5943 9591</li>
+        <li>EMAIL: info@lancersinn.co.ls</li>
+        <h3>Working Hours</h3>
+         > Mon – Fri: 8:00 AM – 10:00 PM<br>
+         > Sat – Sun: 9:00 AM – 11:00 PM
+    </div>
+    <div class="phala">
+     <h3>PALACE HOTEL CONTACTS</h3>   
+Contact Information
+
+Phone Numbers:
+    <ol><li> +266 5160 8000</li>
+    <li> +266 2222 5100</li>
+    <li> +266 6262 5100</li>
+<li> Email: palace2222hotel@gmail.com</li>
+<li> Website: The Palace Hotel Lesotho</li></ol>
+    </div>
+    
+
+        <div class="RUBI">
+            <h3>RUBICON GUEST HOUSE CONTACTS</h3>
+     Phone Numbers:
+     <ol><li>+266 2278 5681 (Reception)</li>
+     <li>+266 5750 8484</li>
+     <li>+266 6391 4286</li>
+    <li>Email: rubiconguesthouse30@gmail.com</li></ol>
+
+    </div>
+    </div>
+
+
+    
+    <form id="bookings" class="LENOVO">
+
+        <h3>BOOKING FORM</h3>
+
+        
+        <label for="fullname">FULL NAMES:</label>
+        <br>
+        <br>
+
+        <input type="text" id="fullname" name="fullname" placeholder="e.g Mary Jones">
+        <br>
+        <br>
+
+        
+        <label for="location">LOCATION:</label>
+        <br>
+        <br>
+
+        <input type="text" id="location"name="location"placeholder="e.g Lesotho">
+        <br>
+        <br>
+
+        
+        <label for="accommodation">ACCOMMODATION:</label>
+        <br>
+        <br>
+
+        <input type="text" id="accommodation" name="accommodation" placeholder="e.g Lancers Inn"
+         <br>
+         <br>
+
+        
+        <label for="cell">CELL NUMBER:</label>
+        <br>
+        <br>
+
+        <input id="cell"  placeholder="e.g +266..."
+        <br>
+        <br>
+
+        
+        <label for="checkin">CHECK IN:</label>
+        <br>
+        <br>
+
+        <input type="date" id="checkin"
+        <br>
+        <br>
+
+        
+        <label for="guests">GUESTS:</label>
+        <br>
+        <br>
+
+        <input type="number"id="guests" placeholder="1, 2, 3, 4" oninput="calculateFullPrice()"
+        <br>
+    
+
+        <label for="nights">NIGHTS:</label>
+        <br>
+        <br>
+
+        <input type="number"id="nights" oninput="calculateFullPrice()"
+        <br>
+        <br>
+
+        
+        <label for="roomchoice">ROOM CHOICE:</label>
+        <br>
+        <br>
+
+        <select id="roomchoice"name="roomchoice"onchange="calculateFullPrice()"
+           
+
+            <option value="300">
+                Basic (LSL 300 per guest per night)
+            </option>
+
+            <option value="500">
+                Proficient (LSL 500 per guest per night)
+            </option>
+
+            <option value="900">
+                Advanced (LSL 900 per guest per night)
+            </option>
+
+        </select>
+
+        <br>
+        <br>
+
+        
+        <h4>
+            Total: M<span id="total">300</span>
+        </h4>
+
+        <br>
+
+        
+        <button type="submit">SUBMIT BOOKING</button>
+
+    </form>
+
+
+
+    <script>
+
+        function calculateFullPrice() {
+
+            const guestCount =
+                Number(document.getElementById("guests").value) || 0;
+
+            const nightCount =
+                Number(document.getElementById("nights").value) || 0;
+
+            const price =
+                Number(document.getElementById("roomchoice").value) || 0;
+
+            const total = guestCount * nightCount * price;
+
+            document.getElementById("total").textContent =
+                total.toLocaleString();
+
+        }
+
+        
+        window.onload = calculateFullPrice;
+
+
+    
+        document.getElementById("bookings").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            calculateFullPrice();
+
+            alert("Your booking details have been submitted successfully, Our Team Will be in Touch!");
+
+        });
+
+        
+        const today = new Date().toISOString().split("T")[0];
+
+        document.getElementById("checkin").setAttribute("min", today);
+
+    </script>
+
+</body>
+
+
+<footer>
+    <p>Copyright &copy; 2026 Tourism Lesotho. All Rights Reserved.</p>
+</footer>
+
+</html>

@@ -1,0 +1,366 @@
+header{
+  margin-bottom: 10px;
+  background-image: url(.jpg);
+  text-align: center;
+  padding: 40px;
+  color: whitesmoke;
+}
+
+footer{
+  text-align: center;
+  padding: 40px;
+}
+
+.papi{
+  background-color: transparent;
+  color: black;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 1spx;
+  border: solid ;
+  margin-bottom: 20px;
+}
+.phala{
+  background-color: transparent;
+  color: black;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: -1px;
+  border: solid ;
+  margin-bottom: 40px;
+}
+.RUBI{
+  background-color: transparent;
+  color: black;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: -1px;
+  border: solid ;
+  margin-bottom: 40px;
+  height: 250px;
+}
+
+.A{
+ background-color: grey;
+ width:500px;
+ border: solid black;
+ color: whitesmoke;
+}
+
+.B{
+ background-color: grey;
+ width:500px;
+ border: solid black;
+ color: whitesmoke;
+ margin-left:510px;
+ margin-top: -510px;
+}
+
+.C{
+ background-color: grey;
+ width:480px;
+ border: solid black;
+ color: whitesmoke;
+ margin-left:1020px;
+ margin-top: -510px;
+}
+
+
+
+
+body{
+  background-image: url('tshehlanyane.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+ .links {
+   display: flex;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin-top: 20px;
+   margin-right: 40px;
+
+  }
+
+  .links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+
+.links a:hover {
+  background-color: blue;
+  font-size: 18px;
+  
+}
+
+
+.LENOVO{
+  border-radius: 20px;
+  background-color:whitesmoke ;
+  color: black;
+  width: 30%;
+  border:4px solid black;
+  height: 800px;
+  margin-left: 700px;
+  margin-top: -1000px;
+
+}
+.table{
+  color: whitesmoke;
+}
+
+ a:hover{
+  background-color: blue;
+  font-size: 18px;
+}
+
+
+
+.three{
+  background-image: url('pic 2.jpg');
+  height: 500px;
+  width: 45%;
+  box-shadow: 3px rgba(123, 61, 32, 1.0);
+  border-radius: 20px;
+  border: solid;
+  margin-left: 20px;
+  color: whitesmoke;
+
+
+}
+
+.four{
+    background-image: url('tourism 2.jpg');
+  height: 500px;
+  width: 45%;
+  box-shadow: 3px rgba(123, 61, 32, 1.0);
+  border-radius: 20px;
+  border: solid;
+  margin-left: 750px;
+  margin-top: -490px;
+  color: whitesmoke;
+}
+.five{
+  background-image: url('tshehlanyane.jpg');
+  height: 500px;
+  width: 45%;
+  box-shadow: 3px rgba(123, 61, 32, 1.0);
+  border-radius: 20px;
+  border: solid;
+  margin-left: 20px;
+  color: whitesmoke;
+
+}
+.six{
+  background-image: url('kome.jpg');
+  height: 500px;
+  width: 45%;
+  box-shadow: 3px rgba(123, 61, 32, 1.0);
+  border-radius: 20px;
+  border: solid;
+  margin-left: 750px;
+  margin-top: -500px;
+  color: whitesmoke;
+
+}
+.CONTACT{
+  border: 4px solid black;
+  background-color:whitesmoke ;
+  color: black;
+  width: 30%;
+  border-radius: 20px;
+  height: 800px;
+  margin-bottom: 200px;
+  margin-left: 90px;
+}
+
+.boy{
+  background-color: whitesmoke;
+  color: black;
+  width: 70%;
+  margin-left: 1px;
+  width: 100%;
+}
+
+
+.pic2{
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+
+}
+
+.pic3{
+  width: 20%;
+  height: 30%;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+.pic4{
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+}
+.pic5{
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+}
+.pic6{
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+}
+.pic7{
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+}
+.pic8{
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+}
+.pic9{
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+}
+
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        width: 94%;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    .three, .four, .five, .six {
+        width: 100%;
+        min-width: 0;
+        min-height: 350px;
+        height: auto;
+
+        margin: 0;
+        padding: 15px;
+
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .three h1, .four h1,
+    .five h1, .six h1 {
+        font-size: 20px;
+    }
+
+    .three h2, .four h2,
+    .five h2, .six h2 {
+        font-size: 18px;
+    }
+
+    .three p, .four p,
+    .five p, .six p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+
+/* MOBILE PHONES */
+@media screen and (max-width: 480px) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        width: 96%;
+        margin: 15px auto;
+        box-sizing: border-box;
+    }
+
+    .three, .four, .five, .six {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: 280px;
+
+        margin: 0;
+        padding: 8px 5px;
+
+        box-sizing: border-box;
+        overflow: hidden;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border: 2px solid black;
+        border-radius: 10px;
+
+        font-size: 10px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .three h1, .four h1,
+    .five h1, .six h1 {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .three h2, .four h2,
+    .five h2, .six h2 {
+        font-size: 11px;
+        overflow-wrap: anywhere;
+    }
+
+    .three p, .four p,
+    .five p, .six p {
+        font-size: 9px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+        margin: 5px 0;
+    }
+
+    .three img, .four img,
+    .five img, .six img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+

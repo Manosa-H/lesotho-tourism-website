@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: whitesmoke;
+        }
+
+        header {
+            padding: 40px;
+            text-align: center;
+            color: whitesmoke;
+            background-image: url('lesotho.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header .lead {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .links {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            margin-right: 40px;
+        }
+
+        .links a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .links a:hover {
+            background-color: blue;
+            border-radius: 4px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2.2rem;
+        }
+
+        .accommodation-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: grey;
+            border: 2px solid black;
+            color: whitesmoke;
+            border-radius: 8px;
+            overflow: hidden;
+            padding-bottom: 20px;
+            width: 33.33%;
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .card p,
+        .card h2,
+        .card h3 {
+            padding: 10px 20px;
+        }
+
+        .card ol {
+            margin-left: 40px;
+            padding-right: 20px;
+        }
+
+        .card ol li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-image: url('lesotho.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            text-align: center;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        .dark-mode {
+  background-color: black;
+  color: white;
+}
+
+        
+
+        @media (max-width: 1200px) {
+            .accommodation-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 800px;
+            }
+        }
+
+        
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .page-title {
+                font-size: 1.8rem;
+            }
+
+            .links {
+                justify-content: center;
+                margin-right: 0;
+            }
+
+            .card img {
+                height: 300px;
+            }
+        }
+
+        
+
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 10px;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            header .lead {
+                font-size: 0.95rem;
+            }
+
+            .links {
+                justify-content: center;
+                gap: 5px;
+                margin-right: 0;
+            }
+
+            .links a {
+                font-size: 14px;
+            }
+
+            .page-title {
+                font-size: 1.5rem;
+            }
+
+            .accommodation-container {
+                padding: 10px;
+                gap: 20px;
+            }
+
+            .card img {
+                height: 220px;
+            }
+
+            .card p,
+            .card h2,
+            .card h3 {
+                padding: 8px 15px;
+            }
+
+            footer {
+                padding: 25px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1><i>ACCOMMODATION</i></h1>
+            <p class="lead">
+                Experience refined comfort and timeless elegance
+                in every room and suite
+            </p>
+        </div>
+
+        <nav class="links">
+            <a href="index1.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <button onclick="myFunction()">Toggle dark mode</button>
+    </header>
+
+    <main>
+
+        <h1 class="page-title">ACCOMMODATION</h1>
+
+        <div class="accommodation-container">
+
+            <div class="card">
+                <img src="lancers.jpg" alt="Lancers Inn">
+
+                <p>
+                    <strong>ELEGANCE</strong><br>
+                    Lancers Inn Hotel<br>
+                    Lancers Inn is a historic, centrally located hotel
+                    and restaurant situated at the corner of Kingsway
+                    and Pioneer Road in Maseru, Lesotho.
+                </p>
+
+                <h3>Up to 35% saving on Club rooms and suites</h3>
+
+                <ol>
+                    <li>Luxury amenities</li>
+                    <li>3 adults & 2 children</li>
+                    <li>Sea view side</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <img src="palace.jpg" alt="The Palace Hotel">
+
+                <p>
+                    The Palace Hotel is a 3-star hotel located in
+                    Thabana Tsooana, Berea district, situated along
+                    Main North 1 in Lesotho.
+                </p>
+
+                <h2>Amenities and features</h2>
+
+                <p>
+                    Rooms: Double, twin and suite options equipped
+                    with TVs and fridges, tea/coffee makers, desks
+                    and daily housekeeping.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="rubicon.jpg" alt="Rubicon Guest House">
+
+                <p>
+                    Rubicon Guest House is located in Qalakheng,
+                    Mohale's Hoek, Lesotho, offering scenic mountain
+                    views and a swimming pool.
+                </p>
+
+                <h2>Accommodation and Pricing</h2>
+
+                <ol>
+                    <li>Single Rooms range from M760 to M1100 per night.</li>
+                    <li>Breakfast is included with single rooms stay.</li>
+                    <li>Swimming pool, deck area with mountain views
+                    and various guest facilities.</li>
+                </ol>
+            </div>
+
+        </div>
+
+    </main>
+    <script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+    <footer>
+        &copy; 2026 Tourism Lesotho
+    </footer>
+
+</body>
+</html>
